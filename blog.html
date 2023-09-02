@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog Question</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+            rel="stylesheet"
+            type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="w-11/12 mx-auto">
+        <div class="flex justify-center">
+            <h1 class="text-3xl font-bold mt-5">Blog Questions</h1>
+        </div>
+        <div>
+            <button class="btn btn-warning" onclick="goBack()">Back</button>
+        </div>
+
+        <!-- Question 1 -->
+        <section class="bg-blue-200 mt-5">
+            <h5 class="text-xl">
+                <span class="text-xl font-semibold">Question 1:</span> Discuss
+                the scope of var, let, and const?
+            </h5>
+            <br />
+            <h4 class="font-bold">
+                <span class="text-xl font-bold">Answer:</span> In JavaScript,
+                var, let, and const are used to declare variables, but they have
+                different scopes and behaviors. Understanding their scopes is
+                crucial for writing clean and maintainable code.<br /><br />
+                <div class="">
+                    var: ~ when you need function-level scoping and are not
+                    concerned about some of the quirks it has.<br /><br />
+                    let: ~ when you need block-level scoping and may need to
+                    reassign the variable.<br /><br />
+                    const: ~ when you need block-level scoping and want to
+                    ensure the variable's value remains constant after
+                    initialization, though you can still modify properties or
+                    elements within the variable if it holds an object or array.
+                </div>
+            </h4>
+        </section>
+
+        <!-- Question 2 -->
+        <section class="bg-green-300 mt-5">
+            <h5 class="text-xl">
+                <span class="text-xl font-semibold">Question 2:</span> Tell us
+                the use cases of null and undefined?
+            </h5>
+            <br />
+            <h4 class="font-bold">
+                <span class="text-xl font-bold">Answer:</span> In JavaScript,
+                null and undefined are two distinct values with specific use
+                cases. <br /><br />
+                undefined: ~ for variables that have not been assigned a value
+                or for function parameters that are not provided when calling
+                the function.
+                <br /><br />
+                null: ~ when you want to explicitly indicate the absence of a
+                value or to clear a reference to an object. It's often used when
+                you need to distinguish between "no value assigned" and "value
+                intentionally set to nothing."
+            </h4>
+        </section>
+
+        <!-- Question 3 -->
+        <section class="bg-purple-400 mt-5">
+            <h5 class="text-xl">
+                <span class="text-xl font-semibold">Question 3:</span> What do
+                you mean by REST API?
+            </h5>
+            <br />
+            <h4 class="font-bold">
+                <span class="text-xl font-bold">Answer:</span> REST API stands
+                for Representational State Transfer Application Programming
+                Interface. It is an architectural style for designing networked
+                applications, and it is one of the most common approaches for
+                building web services and APIs on the internet. REST is not a
+                protocol but rather a set of constraints and principles for
+                designing web services that are scalable, maintainable, and
+                easily consumed by clients.<br /><br />
+
+                HTTP Methods: ~ REST APIs use HTTP methods (GET, POST, PUT,
+                DELETE, etc.) to perform CRUD (Create, Read, Update, Delete)
+                operations on resources. These methods are mapped to the
+                standard HTTP verbs, making the API intuitive and
+                self-descriptive.<br /><br />
+
+                Layered System: ~ REST allows for a layered architecture, where
+                intermediaries like load balancers, caching systems, and proxies
+                can be placed between clients and servers without affecting the
+                overall system's functionality.
+            </h4>
+        </section>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
